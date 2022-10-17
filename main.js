@@ -59,3 +59,17 @@ const {
   },
 } = makeArrayOfItems();
 console.log(item1);
+
+const person1 = {
+  name: "John",
+  age: 34,
+  printHello() {
+    return "hello";
+  },
+};
+
+const person2 = { age: 13, favoriteFood: "Watermelon" };
+
+const person3 = { ...person1, ...person2 };
+
+console.log(person3.printHello());
